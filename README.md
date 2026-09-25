@@ -3,12 +3,13 @@
 FL Studio VST3 that captures your export and uploads it straight to [Samply](https://samply.app).
 By [B Minor](https://bminorr.github.io).
 
-## Windows (PowerShell, no admin)
+## Windows (PowerShell – asks for administrator rights once)
 ```powershell
 irm https://github.com/BMinorr/samply-bounce-releases/releases/latest/download/install-windows.ps1 | iex
 ```
-Then in FL Studio: **Options → Manage plugins → Plugin search paths**, add
-`%LOCALAPPDATA%\Programs\Common\VST3`, and click **Find installed plugins**.
+Installs into `C:\Program Files\Common Files\VST3` (the VST3 folder FL Studio and Ableton scan) and lets
+Windows users update just that plugin folder, so later updates need no admin.
+Then in FL Studio: **Options → Manage plugins → Find installed plugins**.
 
 ## macOS (Terminal)
 ```bash
